@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.tribute{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    background: linear-gradient(orange,white,green) ;
+}
+.heading{
+    align-self: center;
+    font-size: 50px;
+    font-family: 'Righteous',monospace;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    color: black;
+    padding: 0px 20px;
+    text-shadow: 1px 1px rgb(255, 123, 0);
+}
+.subheading{
+    align-self: center;
+    font-size: 30px;
+    font-family: 'Ubuntu',monospace;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: black;
+    padding: 0px 20px;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    color: black;
+    margin-bottom: 40px;
+}
+.title{
+    font-size: 20px;
+    font-family: 'Ubuntu',monospace;
+    text-align: justify;
+    padding: 0px 20px 20px 20px;
+    align-self: center;
+}
+.image{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    padding: 12px;
+    overflow:scroll;
+}
+.image img{
+    width: 100%;
+    border-top: 2px solid rgb(255, 140, 0);
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border-bottom: 2px solid rgb(0, 255, 72);
+    border-radius: 35px;
+    margin-right: 4px;
+    margin-left: 4px;
+}
+.biography{
+    font-size: 20px;
+    font-family: 'Ubuntu',monospace;
+    flex: 1;
+}
+.divTitle{
+    font-size: 30px;
+    font-family: 'Ubuntu',monospace;
+    margin: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+ul{
+    padding: 10px 15px;
+    color: black;
+    list-style-type: circle;
+}
+ul li{
+    margin: 20px;
+    text-align: justify;
+    text-indent: 5px;
+}
+.wikipedia{
+   padding: 12px;
+   text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: rgb(17, 255, 0);
+    text-shadow: 1px 1px black;
+}
