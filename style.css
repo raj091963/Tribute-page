@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+.container{
+    font-family: 'ABeeZee', fantasy;
+    background: url("https://media.istockphoto.com/id/1294097853/vector/indian-flag-colours-tricolor-horizontal-vector-backgrounds-of-three-very-light-pastel-shades.jpg?s=612x612&w=0&k=20&c=x3lH8fuEKqR8XokO1PEk6OoWNJKH52UonPfAzUC13rA=");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.large{
+    font-size: 30px;
+}
+.small{
+    font-size: 20px;
+}
+.title{
+    text-align: center;
+    font-size: 60px;
+    color: rgb(255, 119, 0);
+    padding: 20px 0px;
+    font-weight: bold;
+    filter: drop-shadow(3px 3px 2px black);
+}
+#header{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    height: 89vh;
+}
+#header .image{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-left:10%;
+}
+#header .image img{
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    border: 2px solid black;
+}
+#header div:nth-child(2){
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+#header .description{
+    color: green;
+    padding: 20px 10%;
+}
+#header .description div{
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+#header ul{
+    padding-top: 15px;
+    list-style-type: disc;
+    padding-left: 14px;
+}
+#header ul li{
+    color: green;
+    padding: 5px;
+}
+#header ul li:hover{
+    list-style-type: circle;
+}
+.biography{
+    font-weight: bold;
+}
+.divTitle{
+    padding: 20px 20px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+.biography ul{
+    color: black;
+    list-style-type: circle;
+    padding: 0 15%;
+}
+.biography ul li{
+    margin: 12px;
+    text-indent: -66px;
+    padding-left: 80px;
+}
+
+.biography ul li:hover{
+    list-style-type: disc;
+}
+.biography ul li span{
+    font-weight: bolder;
+}
+.wikipedia{
+   padding: 12px;
+   text-align: center;
+   font-weight: bold;
+}
+.wikipedia a{
+    text-decoration: none;
+    color: black;
+    filter: opacity(0.4);
+}
+.wikipedia a:hover{
+    filter: opacity(1);
+}
+#footer{
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 120px;
+}
+.circle{
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    position: relative;
+    top: 25px;
+}
+.circle a{
+    text-decoration: none;
+    padding: 12px 14px;
+    background: white;
+    border-radius: 50px;
+    border:5px double black;
+}
+.green{
+    padding: 50px 0px;
+    background-color: black;
+}
+
+@media only screen and (max-width:960px){
+    
+    #header .description{
+        padding:20px 10%;
+    }
+    .title{
+        font-size: 50px;
+    }
+    .large{
+        font-size: 23px;
+    }
+}
+@media only screen and (max-width:830px){
+    .small{
+        font-size: 18px;
+    }
+    .biography ul li{
+        text-indent:-60px;
+        padding-left: 66px;
+    }
+}
+@media only screen and (max-width:750px){
+    .large{
+        font-size: 20px;
+    }
+    .small{
+        font-size: 15px;
+    }
+    #header .image{
+        padding-left: 5%;
+    }
+    .title{
+        font-size: 40px;
+    }
+    .biography ul li{
+        text-indent:-49px;
+        padding-left: 58px;
+    }
+}
+
+
+@media only screen and (max-width:620px){
+    .biography ul{
+        padding: 0 10%;
+    }
+    #header{
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        padding: 10px;
+    }
+    #header .image{
+        padding-left: 0;
+    }
+    #header .image img{
+        width: 330px;
+        border-radius: 50px;
+    }
+    .description{
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+    }
+    #header .description{
+        padding:20px 5%;
+    }
+    .description div:nth-child(2){
+        text-align: center;
+    }
+}
+@media only screen and (max-width:580px){
+    .title{
+        font-size: 35px;
+    }
+
+}
+@media only screen and (max-width:523px){
+    .biography ul{
+        padding: 0 8%;
+    }
+    .biography ul li{
+        text-align: justify;
+        text-indent:-50px;
+        padding-left: 60px;
+    }
+}
+@media only screen and (max-width:485px){
+    .title{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width:427px){
+    .title{
+        font-size: 25px;
+    }
+    .large{
+        font-size: 18px;
+    }
+    .small{
+        font-size: 12px;
+    }
+    .divTitle{
+        padding: 20px 5px;
+    }
+    .biography ul{
+        padding: 0 5%;
+    }
+    .biography ul li{
+        text-indent:-40px;
+        padding-left: 55px;
+    }
+}
+@media only screen and (max-width:369px){
+    .title{
+        font-size: 22px;
+    }
+    #header .image img{
+        width: 280px;
+    }
+}
+@media only screen and (max-width:320px){
+    #header .image img{
+        width: 230px;
+    }
+}
+
